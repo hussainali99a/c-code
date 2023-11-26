@@ -1,0 +1,46 @@
+linked is a linear data structure used to store list of values.
+differenec btw linked list and arrays:-
+array is a single memory block with partitions 
+linked list are memory blocks linked to each other
+
+challenges of array:-
+1:static size(fixed size) size is to be specify arr[50] means size is 50 we cannot make changes 
+if we have elements more than size than we have to make new array if less are their then wastage of memory
+
+2:contigous memory location means memory is allocated in contigous way
+single block should be their .
+
+3:inserting and deletiing is costly in array
+if we want to insert an element in array than we have to do right shift in arrayif delete than we hve to do left shift
+big o is O(n)
+
+ADVANTAGES OF LINKED LIST OVER AN ARRAY:-
+1:dynamic size is their it allocted at run time we dont have to fix size
+2:non contigous memory alloction bcz it is block of memory it can be present in any where in memory
+3:insertion and deletion is non expensive
+
+LISTNODE:-
+block of memory is called node it have to parts one is data part and second part is pointer which is pointing to next node in the linked list
+
+we put  head pointer which store address of first node
+if any   node next field  have null it means it is last node of linked list
+
+TYPES OF LINKED LIST:
+1:single linked list :every node point to successor node means next node
+2:doubly linked list:every node connected to previous and next node
+3:circular linked list:the last node will point to head node 
+
+IMPLEMENTATION OF A LIST NODE IN A SINGLY LINKKED LIST
+class node{
+    int val; // we can use float and anyother data type.
+    node* next;
+};
+
+TRAVERSAL IN LINKED LIST:
+we make temp pointer and use to traverse the linked list
+temp = temp->next
+
+INSERTION AT Kth POSITION IN A SINGLY LINKED LIST :
+
+done in copy 
+
